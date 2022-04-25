@@ -10,12 +10,14 @@ The first KPI that is chosen is the total retail sales by town in 2012. The tota
 ![](Retail%20Sales%20by%20Town%20in%202012.png)
 
 I also wanted to figure out whether the stores in thoses towns are high perfominhg. I then create a lookup table named Performance by Town and I sorted the the total sales into four categories. The categories are Low, Acceptable, Good and Exceleent. The excellent performing towns are the towns I want to expand to a new store.
+
 ![](Performance%20by%20Town%20Lookup%20Table.png)
 
 Sample 2012 Store Performance Cloumn
 gg
 
 The top ten towns are the town options for expenssion
+
 ![](Store%20Performance%20by%20Town%202012%20Vlookup.png)
 
 
