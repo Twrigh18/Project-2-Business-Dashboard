@@ -1,34 +1,75 @@
-# Project-2-Business-Dashboard
-Project for a analytics excel class is where I find a problem and make a dashboard find trends and new information in order to come up with a solution. Every KPI is created from sratch and 
+# Northeast Store Expansion
 
 Will be done on after April 16th 2022 ( Under Construction )
 
-## Retail Sales by Town in 2012 KPI
+This project was done in my Advanced Excel class I took at a community college. This project is that I am a store owner called Northeast Sports and I want to pick the 5 best towns in connect open a new store. The dataset that is used is the 2012 Retail Sales, 2013 Retail Sales, and 2001-2018 Real Estate Sales. The dataset is in the data model and not in the worksheet due to the large storage of those datasets. To find the 5 best towns, I am going to come up with 12 Key Performance Indicators.
 
-The first KPI that is chosen is the total retail sales by town in 2012. The total retail sales are sorted by each town. The KPI is filter to the top 10 towns with the highest retail total sales. This means that Stratford is the highest performing town in Connecticut in 2012.
+The 12 KPIs that I created that will help find the 5 best towns to open a new store: 
+
+1. Retail Sales by Town in 2012, 
+2. Retail Sales by Town in 2013, 
+3. Real Estate Sales by Property Type, 
+4. Real Estate Sales by Residential Type, 
+5. Total Real Estate Sales by Town, 
+6. Total Assessed Real Estate Value by Year, 
+7. Real Estate Sales Ratio by Town, 
+8. Total Real Estate Sales by Year, 
+9. Average Real Estate Sales by Town, 
+10. Average Real Estate Sales by Year, 
+11. Average Retail Sales by Town in 2012, 
+12. Average Retail Sales by Town in 2013.
+
+For each KPI, PivotTables are created to see the patterns and trends. And then pivot charts will be created and then put into a dashboard to see more patterns and trends. Every KPI has a pivot table and a slicer to filter the data. I want to use the top retail total and average per town and real estate sales see if there’s overlap if there is, how much is it. The higher the sales and real estate sales, the more likely that town will be chosen.
+
+
+## Retail Sales by Town in 2012 
+
+The first KPI that is chosen is the total retail sales by town in 2012. This KPI determines the total retail sales in each town. The total retail sales are sorted by each town. The KPI is filter to the top 10 towns with the highest retail total sales. This means that Stratford is the highest performing town in Connecticut in 2012.
 
 ![](Retail%20Sales%20by%20Town%20in%202012.png)
 
 I also wanted to figure out whether the stores in thoses towns are high perfominhg. I then create a lookup table named Performance by Town and I sorted the the total sales into four categories. The categories are Low, Acceptable, Good and Exceleent. The excellent performing towns are the towns I want to expand to a new store.
 
+### Store Performance in Each Town
+
+I also wanted to figure out whether the stores in those towns are high performing. VLOOKUP is used. The lookup table has been created from scratch. It was not provided on the dataset. The columns created in the KPI worksheets was also not provided so it was created from scratch. I created a lookup table named Performance by Town with named range Performance and I sorted the total sales into four categories. The categories are Low, Acceptable, Good and Excellent. The excellent performing towns are the towns I want to expand to a new store. The lookup value is the cell the first cell in the total retail sales of goods column that I want to use. I count how many rows are in the PivotTable. I will split the count of retail sales of goods rows being used into fours.  I then put it in descending order. For example, for a low performer, I will put $1 into the lookup table in the level low. Then I put $160,000,000 in the acceptable. This means that any number between $1 and $160,000,000 will display a level meaning low. This mean the store in that town is a low performer. $160,000,000 and above will display as acceptable. The numbers in the lookup table are the minimum number that it displays the level and the higher the number, the more the level stays as is unless you put another minimum number on the lookup table. I will do this for levels of acceptable, good, and excellent.
+
 ![](Performance%20by%20Town%20Lookup%20Table.png)
 
-Sample 2012 Store Performance Cloumn
-gg
+After the function is set which is =VLOOKUP(B5,Performance,2,TRUE). Each town displays a store performance. For example, Store Performance in Hartford is Excellent. Store Performance in Brookfield is good. Store performance in Bethel is acceptable. Store performance in Bridgewater is low.
 
-The top ten towns are the town options for expenssion
+![](2012%20Store%20Performance%20Sample%20Vlookup.png)
+
+
+I will filter this by the top 10 towns
 
 ![](Store%20Performance%20by%20Town%202012%20Vlookup.png)
 
+Any town with the performance of excellent will be used to choose the 5 best towns to open up a new store.
 
 ## Retail Sales by Town in 2013
 
-The second KPI is the same as the first KPI but in year 2013. The filtering is the same. East Hartford is the highest performing Town.
-Vlookup is ueesd. The lookup table has been created from scratch. It was not provided on the dataset The cloums created was also not provided so it was created from scratch.
+This KPI is the same as the first KPI but in year 2013. The filtering is the same. East Hartford is the highest performing Town.
+Vlookup is uesd. The lookup table has been created from scratch. It was not provided on the dataset The cloums created was also not provided so it was created from scratch.
 
 ![](Retail%20Sales%20by%20Town%20in%202013.png)
 
+I also wanted to figure out whether the stores in thoses towns are high perfominhg. I then create a lookup table named Performance by Town and I sorted the the total sales into four categories. The categories are Low, Acceptable, Good and Exceleent. The excellent performing towns are the towns I want to expand to a new store.
+
+### Store Performance in Each Town
+I also wanted to figure out whether the stores in those towns are high performing. The process is the same as the 2012 Retail Sales KPI. VLOOKUP is used. The lookup table has been created from scratch. It was not provided on the dataset. The columns created in the KPI worksheets was also not provided so it was created from scratch.
+
+![](Performance%20by%20Town%20Lookup%20Table.png)
+
+After the function is set which is =VLOOKUP(B5,Performance,2,TRUE). Each town displays a store performance. For example, Store Performance in Bristol is Excellent. Store Performance in Cromwell is good. Store performance in Canton is acceptable. Store performance in Canaan is low.
+
+![](2013%20Store%20Performance%20Sample%20Vlookup.png)
+
+I will filter this by the top 10 towns
+
 ![](Store%20Performance%20by%20Town%202013%20Vlookup.png)
+
+Any town with the performance of excellent will be used to choose the 5 best towns to open up a new store.
 
 ## Real Estate Sales by Property Type
 
@@ -122,7 +163,7 @@ The best town to pick is Stamford. Stamford is the town that is near the top in 
 ### Danbury
 Another town to pick is Danbury. Danbury is in the top 3 in total and average retail sales. Danbury is not as expensive as Stamford. So, Stamford gets a slight edge because its constantly more expensive because Stamford has a higher average real estate sale. Danbury has a chance to slightly underperform in the future if Danbury becomes cheap place to live. But the high total and average sales proved that it will not happen anytime soon. That is why Danbury is the 2nd choice to open a new location.
 
-### Norwolk
+### Norwalk
 Norwalk will be another town to pick. Norwalk is in the top 10 in both total and average retail sales. Norwalk is in the top five in toral real estate sales therefore it is expensive town and people have money. Because Norwalk has a lower average real estate sale. There is a chance of the store in that town to underperform if Norwalk becomes a cheap town to live which can happen. Because it is in the top 8, it will not happen right away. Therefore, Norwalk is the 3rd choice to open a new location.
 
 ### Greenwich
