@@ -89,15 +89,24 @@ The third KPI is determines the highest total real estate sales in each town. Th
 
 ![](Total%20Real%20Estate%20Sales%20by%20Town.png)
 
-I want to figure out with a toen is expenisive or cheap. I also wanted to figure out whether the stores in thoses towns are high perfominhg. I then create a lookup table named  Town’s home valueand I sorted the the total sales into four categories. The categories are Low, Acceptable, Good and Exceleent. 
+### Town’s Value 
+
+I also wanted to figure out whether the towns are cheap or expensive to live in. VLOOKUP is used. The lookup table has been created from scratch. It was not provided on the dataset. The columns created in the KPI worksheets was also not provided so it was created from scratch. I created a lookup table named Town’s Home Value with named range Value and I sorted the total sales into four categories. The categories are Cheap, Middle, Pricey and Expensive. The most expensive towns are the towns I want to expand to a new store. The lookup value is the cell the first cell in the total real estate sales column that I want to use. I count how many rows are in the PivotTable. I will split the count of total sales amount rows being used into fours.  I then put it in descending order. For example, for a town that is cheap to live, I will put $1 into the lookup table in the level cheap. Then I put $382,000,000 in the Middle. This means that any number between $1 and $382,000,000 will display a level meaning cheap. This means the town is a cheap place to live. $382,000,000 and above will display as middle. The numbers in the lookup table are the minimum number that it displays the level and the higher the number, the more the level stays as is unless you put another minimum number on the lookup table. I will do this for levels of middle, pricey, and expensive.
 
 ![](Town's%20Home%20Value.png)
 
-The excellent performing towns are the towns I want to expand to a new store.
+After the function is set which is =VLOOKUP(B5,Value,2,TRUE). Each town displays a value. For example, Town’s home value in Bristol is Expensive. Town’s home value in Clinton is pricey. Town’s home value in Burlington is middle. Town’s home value in Chester is cheap.
 
-![]()
+![](Town's%20Home%20Value%20Sample%20Vlookup.png)
 
-## Total Assessed Real Estate Value by Year KPI
+I will filter this by top 10 towns
+
+![](Town's%20Home%20Value%20Vlookup.png)
+
+The more expensive the town, the money people have there they are more likely to spend it. Any town that is expensive to live will be used to choose the 5 best towns to open up a new store.
+
+
+## Total Assessed Real Estate Value by Year 
 
 The assessed value is the value that the properties get before the sales have been completed. This KPI determines if towns are getting more expensive before completed the sales. The assessed value has been trending upward. This gives first impressions on whether a town is expensive or cheap place to live. This upward trend means the towns in Connecticut are getting more expensive.
 
@@ -113,7 +122,7 @@ Sales Ratio is way of measuring accuracy of the property assessed value when com
 
 ## Total Real Estate Sales by Year
 
-This KPI determines the total real estate sales for all the towns by year after the real estate sales has been completed. This determine where Connecticut is becoming an expensive place to purchasing a home in. Since 2011 the sales have been trending upward therefore all the towns in Connecticut. became more expensive. 
+This KPI determines the total real estate sales for all the towns by year after the real estate sales has been completed. This determine whether Connecticut is becoming an expensive place to purchasing a home in as time goes on. Since 2011 the sales have been trending upward therefore all the towns in Connecticut. became more expensive. 
 
 ![](Total%20Real%20Estate%20Sales%20by%20Year.png)
 
