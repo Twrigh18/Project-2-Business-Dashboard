@@ -128,13 +128,13 @@ This KPI determines the total real estate sales for all the towns by year after 
 
 ## Average Real Estate Sales by Town
 
-This determines the . If the average total realst estate is high
+This KPI determines the average real estate sales by town. If the average real estate sales are high, it means it is means that town is consistently more expensive and there is not much cheap housing out of nowhere in that expensive town. If the average real sales are low, that means the town is consistently cheaper and you won’t see an extremely expensive home out of nowhere. This means the town will consistently be more expensive or cheap into the future, so it gives a better idea on how cheap or expensive a town is to live in. For expensive Greenwich is the most expensive town. Because of the highest average real estate sales, Greenwich will stay expensive for years to come.
 
 ![](Average%20Real%20Estate%20Sales%20by%20Town.png)
 
 ## Average Real Estate Sales by Year
 
-This KPI is th average real estate sales of all the towns by year. The trend is going up. This means all towns are getting more expensive. Because sits the average it means higher average means its will stay consisitenly more expensive. The has been trending
+This KPI determines the average real estate sales of all the towns by year. This means that if the average real estate sales are rising, it means the houses in any town stays more expensive. Meaning you won’t really find a cheap house if any person is from a state with a cheaper cost of living. If the average real estate sales are lowering, the is the towns will be consistently cheaper. This makes Connecticut a viable place to live. Because the average real estate sales are trending upward, this means Connecticut is become an expensive state to live in. It is good thing because more money people have, the more likely they will spend which can translate into buying sports merchandise in the stores in any town.
 
 ![](Average%20Real%20Estate%20Sales%20by%20Year.png)
 
@@ -161,9 +161,15 @@ This is the what if scenario for the average real estate sales starting in 2010.
 
 ![](Dashboard.png)
 
-## Solutions
+## The Five Best Towns to Choose For Expansion
 
-The 5 towns that will be chose
+First is to find the total real estate sales by property type. Residential has the most real estate sales. Therefore, residential will be the focus.
+This means I can find the most expensive towns by the total real estate’s sales in each town. Also, the average real estate sales can determine if a town is always consistently expensive or always consistently cheap.
+
+Next is to find the high performing stores. To find the high performing stores is to see which total retail sales of goods is in the top. The average retail sales are whether the store is consistently overperforming or consistently underperforming.
+
+The goal is to stay away from towns with the lowest average and total real estate sales. This is the sign that the town is a cheap place to live and that is the sign that people there don’t have a lot of disposable income. Therefore, people won’t spend a lot in one in the stores in those towns. For Retail Sales, the goal is to stay away from towns where the stores have the lowest total and average retail sales. This means the stores in those towns are underperforming and expansion there will not be a great idea.
+
 The five towns that will be chosen will be in the order of priority.
 
 ### Stamford
