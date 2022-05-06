@@ -1,7 +1,5 @@
 # Northeast Store Expansion
 
-Will be done on after April 16th 2022 ( Under Construction )
-
 This project was done in my Advanced Excel class I took at a community college. This project is that I am a store owner called Northeast Sports and I want to pick the 5 best towns in connect open a new store. The dataset that is used is the 2012 Retail Sales, 2013 Retail Sales, and 2001-2018 Real Estate Sales. The dataset is in the data model and not in the worksheet due to the large storage of those datasets. To find the 5 best towns, I am going to come up with 12 Key Performance Indicators.
 
 The 12 KPIs that I created that will help find the 5 best towns to open a new store: 
