@@ -19,6 +19,7 @@ The 12 KPIs that I created that will help find the 5 best towns to open a new st
 
 For each KPI, PivotTables are created to see the patterns and trends. And then pivot charts will be created and then put into a dashboard to see more patterns and trends. Every KPI has a pivot table and a slicer to filter the data. I want to use the top retail total and average per town and real estate sales see if there’s overlap if there is, how much is it. The higher the sales and real estate sales, the more likely that town will be chosen.
 
+Note: If you want this file, please reach out to tim.wright1234@yahoo.com so that the file can be shared via Dropbox becasue the file size is too big to store on Github and to be sent on Emails.
 
 ## Retail Sales by Town in 2012 
 
